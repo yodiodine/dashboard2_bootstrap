@@ -35,8 +35,6 @@ header .header-wrap .status li i{
 header .header-wrap .status li button{
     padding: 0;
 }
-header .header-wrap .status li button.alarm-btn{}
-header .header-wrap .status li button.profile-btn{}
 header .header-wrap .status li button.profile-btn::after{
     color: #fff;
 }
@@ -44,14 +42,11 @@ header .header-wrap .status li button.profile-btn img{
     width: 25px;
     border-radius: 50px;
 }
-header .header-wrap .status li:nth-child(3) ul.dropdown-menu{
-}
-
 /* main-container */
 #main-container{
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: calc(100vh - 50px);
 }
 #main-container aside{
     width: 25%;
@@ -89,13 +84,9 @@ aside .aside-wrap .create-btn i{
     padding: 0 10px;
     margin-left: -15px;
 }
-aside .aside-wrap .main-category{}
 aside .aside-wrap .main-category>li{
     margin-bottom: 30px;
     font-weight: bold;
-}
-aside .aside-wrap .main-category li .sub-category{
-
 }
 aside .aside-wrap .main-category li .sub-category li{
     position: relative;
@@ -114,8 +105,6 @@ aside .aside-wrap .main-category li .sub-category li i:nth-child(1){
     width: 30px;
     text-align: left;
     color: #afafaf;
-}
-aside .aside-wrap .main-category li .sub-category li span{
 }
 aside .aside-wrap .main-category li .sub-category li i:nth-child(3){
     position: absolute;
@@ -271,6 +260,9 @@ aside .aside-wrap .main-category li .sub-category li i:nth-child(3){
     border: 1px solid #afafaf;
 }
 
+#invoice .invoice-wrap .table-wrap{
+    margin-bottom: 30px;
+}
 #invoice .invoice-wrap .table-wrap::after{
     content: '';
     display: block;
